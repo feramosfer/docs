@@ -128,22 +128,21 @@ Now reboot your server to apply the changes.
 
 #### Step 1: Create and configure the file for the second network interface
 
-First we can copy the main IP configuration for the new network interface file
+First we need to create the network configuration file by copying the one being used for eth0, as shown below:
 
 ```sh
 sudo cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth1
 ```
-Then we access to the new file
+Then we access to the new file:
 ```sh
 sudo nano /etc/sysconfig/network-scripts/ifcfg-eth1
 ```
-And we define the IP settings
+And we define the IP settings:
 ```sh
 # Created by cloud-init on instance boot automatically, do not edit.
 #
 BOOTPROTO=static
 DEVICE=eth1
-HWADDR=fa:16:3e:6c:98:57
 ONBOOT=yes
 TYPE=Ethernet
 USERCTL=no
@@ -151,16 +150,14 @@ DEFROUTE=no
 IPADDR=46.105.135.97
 PREFIX=28
 ```
-> [!primary]
->
-We must to change the ```HWADDR``` field with the current Mac address of the second network physical interface of our server.
->
+
 
 #### Step 2: Add the IP gateway route and the IP rule
 
-With follwoing command we are going to add the gateway IP on the routing table of the server:
+With the following command we are going to add the gateway IP on the routing table of the server:
+
 ```sh
-sudo ip route add default via 46.105.135.111 dev eth1 table 1000
+sudo ip route add default via 46.105.135.110 dev eth1 table 1000
 ```
 ```sh
 ip route
@@ -186,10 +183,10 @@ ip rule
 Now we need to restart your interface:
 
 ```sh
-ifup eth0:0
+ip link set eth1 up
 ```
 
-### Windows Server 2016EN
+### Windows Server 2012/2016
 
 #### Step 1: Check and configure the second network interface
 
@@ -197,7 +194,7 @@ First we must to access to the new network interface information
 
 ![check the second network interface](images/win-ip-vrack-1.png){.thumbnail}
 
-Then we must to check the properties
+Then we must check the properties:
 
 ![properties of the second network interface](images/win-ip-vrack-2.png){.thumbnail}
 
@@ -205,7 +202,7 @@ Then we must to check the properties
 
 #### Step 2: IP Configuration
 
-We must to activate the ```Use the following IP address```:
+We finally select the ```Use the following IP address``` option:
 
 ![ip configuration](images/win-ip-vrack-4.png){.thumbnail}
 
