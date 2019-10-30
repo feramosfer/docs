@@ -22,19 +22,19 @@ This guide will explain how to create an additional volume and then how to attac
 
 
 ## Creating the volume
-- Log in to the OVH Customer [Control Panel](https://www.ovh.com/manager/cloud/){.external}
-- Click the `Add`{.action} button and select `Add a hard disk`{.action}
+- Log in to the OVH Customer [Control Panel](https://www.ovh.com/manager/public-cloud/){.external}
+- Go to the `Block Storag`section, then click the `Create a volume`{.action} button{.action}
 
-![public-cloud](images/2707.png){.thumbnail}
+![public-cloud](images/attach-volume-1.png){.thumbnail}
 
 A new menu will display.
 
-![public-cloud](images/2731.png){.thumbnail}
+![public-cloud](images/attach-volume-2.png){.thumbnail}
 
 
 From this new menu, you can:
 
-- Name your volume
+- Choose the location for your volume
 - Select the volume type:
 
 |Classic|200 IOPS guaranteed|
@@ -42,7 +42,7 @@ From this new menu, you can:
 |High performance|Up to 3000 IOPS|
 
 - Choose the volume capacity starting from 10GB.
-- Choose the region for your volume
+- The name of the volume
 
 
 > [!primary]
@@ -55,7 +55,7 @@ From this new menu, you can:
 - Validate the creation of the volume.
 A new window will be displayed with your volume:
 
-![public-cloud](images/2732.png){.thumbnail}
+![public-cloud](images/attach-volume-7.png){.thumbnail}
 
 
 
@@ -68,7 +68,7 @@ You can then attach your additional volume to an instance:
 Once this is done, it will appear just below your instance:
 
 
-![public-cloud](images/2733.png){.thumbnail}
+![public-cloud](images/attach-volume-9.png){.thumbnail}
 
 
 
