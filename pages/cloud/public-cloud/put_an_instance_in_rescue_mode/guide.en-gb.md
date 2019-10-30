@@ -26,25 +26,25 @@ In such circumstances, you can use rescue mode to reconfigure your instance or r
 
 ### Activate rescue mode
 
-First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu.
 
-![control panel](images/rescue-mode-01.png){.thumbnail}
+![control panel](images/rescue-mode-01-2.png){.thumbnail}
 
 Next, select your PCI project from the side-menu on the left of the screen.
 
-![control panel](images/rescue-mode-02.png){.thumbnail}
+![control panel](images/rescue-mode-02-2.png){.thumbnail}
 
 Next, click the dropdown arrow on your instance and select `Reboot in rescue mode`{.action}
 
-![control panel](images/rescue-mode-03.png){.thumbnail}
+![control panel](images/rescue-mode-03-2.png){.thumbnail}
 
 You will now see the 'Reboot in rescue mode' dialog box. Click the dropdown list to select the Linux distribution you want to use in rescue mode and then click the `Start`{.action} button.
 
-![control panel](images/rescue-mode-04.png){.thumbnail}
+![control panel](images/rescue-mode-04-2.png){.thumbnail}
 
 Once your instance has been rebooted in rescue mode, a message will appear at the top of the screen, containing your temporary password.
 
-![control panel](images/rescue-mode-05.png){.thumbnail}
+![control panel](images/rescue-mode-05-2.png){.thumbnail}
 
 ### Access your data
 
@@ -74,7 +74,7 @@ Your data will now be accessible from the /mnt folder.
 
 Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance normally. To do this, click on the dropdown arrow on your instance, and select `Exit rescue mode`{.action}.
 
-![control panel](images/rescue-mode-06.png){.thumbnail}
+![control panel](images/rescue-mode-06-2.png){.thumbnail}
 
 ### Activate rescue mode using the OpenStack API
 
