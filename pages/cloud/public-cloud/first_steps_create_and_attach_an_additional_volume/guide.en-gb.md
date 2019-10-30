@@ -62,10 +62,9 @@ A new window will be displayed with your volume:
 ## Volume attachment
 You can then attach your additional volume to an instance:
 
-- By dragging and dropping your volume on your instance.
-- By clicking on the arrow in the bottom-right of your volume and selecting `Attach to a server`{.action}
+- By clicking on the right button of your volume and selecting `Attach to a instance`{.action}
 
-Once this is done, it will appear just below your instance:
+Once this is done, it will appear in the `Information`section
 
 
 ![public-cloud](images/attach-volume-9.png){.thumbnail}
