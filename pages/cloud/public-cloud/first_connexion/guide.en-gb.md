@@ -76,7 +76,7 @@ To log in to a Linux instance using Windows, you can use a software program like
 
 Once you have created your instance, you will need to finalise something called *sysprep*. To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and launch the VNC console:
 
-![VNC console](images/vnc_console.png)
+![VNC console](images/vnc_console2.png)
 
 In the first step, choose your country, language and keyboard layout, then click `Next`{.action}:
 
