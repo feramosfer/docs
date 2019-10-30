@@ -34,7 +34,7 @@ Next, select your PCI project from the side-menu on the left of the screen.
 
 ![control panel](images/rescue-mode-02-2.png){.thumbnail}
 
-Next, click the dropdown arrow on your instance and select `Reboot in rescue mode`{.action}
+Next, select on your instance the option `Reboot in rescue mode`{.action}
 
 ![control panel](images/rescue-mode-03-2.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Your data will now be accessible from the /mnt folder.
 
 ### Deactivate rescue mode
 
-Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance normally. To do this, click on the dropdown arrow on your instance, and select `Exit rescue mode`{.action}.
+Once you have completed your tasks, you can deactivate rescue mode by rebooting your instance normally. To do this, select on your instance menu, the option `Exit rescue mode`{.action}.
 
 ![control panel](images/rescue-mode-06-2.png){.thumbnail}
 
